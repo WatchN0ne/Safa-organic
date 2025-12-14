@@ -214,3 +214,13 @@ document.getElementById("checkoutBtn")?.addEventListener("click", ()=>{
 });
 
 renderCart();
+
+document.querySelectorAll(".faq__item").forEach(item=>{
+  item.addEventListener("toggle", ()=>{
+    if(item.open){
+      document.querySelectorAll(".faq__item").forEach(other=>{
+        if(other !== item) other.removeAttribute("open");
+      });
+    }
+  });
+});
