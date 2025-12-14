@@ -909,3 +909,58 @@ body{
     justify-content:center;
   }
 }
+
+/* ===== FAQ PREMIUM iOS FIX ===== */
+
+.faq__item {
+  transition: background .25s ease, box-shadow .25s ease;
+}
+
+.faq__item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 14px 16px;
+  border-radius: 14px;
+
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.faq__item summary:active {
+  background: rgba(31,106,59,.08);
+}
+
+.faq__item[open] {
+  background: rgba(255,255,255,.85);
+  box-shadow: 0 18px 40px rgba(15,26,18,.10);
+}
+
+.faq__item p {
+  padding: 0 16px 14px;
+  animation: faqFade .25s ease;
+}
+
+@keyframes faqFade {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Chevron */
+.faq__chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(15,26,18,.55);
+  border-bottom: 2px solid rgba(15,26,18,.55);
+  transform: rotate(45deg);
+  transition: transform .25s ease, opacity .25s ease;
+  opacity: .6;
+}
+
+.faq__item[open] .faq__chevron {
+  transform: rotate(-135deg);
+  opacity: .9;
+}
