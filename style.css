@@ -875,3 +875,37 @@ body{
     bottom: 16px;
   }
 }
+
+@media (max-width: 768px){
+
+  .bundle-card{
+    grid-template-columns: 1fr;   /* ⬅️ untereinander */
+    gap:16px;
+    padding:18px;
+  }
+
+  .bundle-image{
+    order:1;
+  }
+
+  .bundle-content{
+    order:2;
+  }
+
+  .bundle-content h3{
+    font-size:20px;
+  }
+
+  .bundle-text{
+    font-size:14px;
+  }
+
+  .bundle-list{
+    font-size:14px;
+  }
+
+  .bundle-card .btn{
+    width:100%;
+    justify-content:center;
+  }
+}
