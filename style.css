@@ -964,3 +964,66 @@ body{
   transform: rotate(-135deg);
   opacity: .9;
 }
+
+.products {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.product-card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(14px);
+  border-radius: 22px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.badge {
+  width: fit-content;
+  padding: 6px 12px;
+  background: #dff2e5;
+  color: #1f6b3f;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 14px;
+  color: #444;
+}
+
+.features {
+  padding-left: 18px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 👇 FOOTER LÖST DEIN PROBLEM */
+.card-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details-btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(220, 240, 225, 0.9);
+  color: #1f6b3f;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.details-btn:active {
+  transform: scale(0.96);
+}
